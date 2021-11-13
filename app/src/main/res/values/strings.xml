@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RentalApartmentsFinderApp</string>
+
+    <string name="tv_propertyName">Property name</string>
+    <string name="tv_propertyAddress">Property address</string>
+    <string name="tv_propertyType">Property type</string>
+    <string name="tv_furnitureType">Furniture type</string>
+    <string name="tv_NOB">Number of bedrooms</string>
+    <string name="tv_monthlyPrice">Monthly price</string>
+    <string name="tv_reporter">Reporter</string>
+    <string name="tv_note">Note</string>
+    <string name="btn_create_name">Create</string>
+
+    <string name="propertyName_required">* Property name is required</string>
+    <string name="propertyAddress_required">* Property address is required</string>
+    <string name="propertyType_required">* Property type is required</string>
+    <string name="NOB_required">* Number of bedrooms is required</string>
+    <string name="monthlyPrice_required">* Monthly price is required</string>
+    <string name="reporter_required">* Reporter is required</string>
+
+    <string name="type_apartment">Apartment</string>
+    <string name="type_house">House</string>
+    <string name="type_penthouse">Penthouse</string>
+    <string name="type_villa">Villa</string>
+
+    <string name="type_unfurnished">Unfurnished</string>
+    <string name="type_halfFurnished">Half furnished</string>
+    <string name="type_furnished">Furnished</string>
+</resources>
