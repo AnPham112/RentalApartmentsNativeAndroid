@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity  {
         btnLogin.setText(btnCreateName);
         btnLogin.setOnClickListener(btnLogin_Click);
 
-        Spinner spinnerPropertyType = findViewById(R.id.spinner_propertyType);
+        Spinner spinnerPropertyType = findViewById(R.id.spinnerPropertyType);
         List<String> propertyTypes = new ArrayList<>();
         propertyTypes.add(0,"Select property type");
         propertyTypes.add(getResources().getString(R.string.type_apartment));
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity  {
         spinnerPropertyType.setAdapter(propertyTypeAdapter);
 
 
-        Spinner spinnerFurnitureType = findViewById(R.id.spinner_furnitureType);
+        Spinner spinnerFurnitureType = findViewById(R.id.spinnerFurnitureType);
         List<String> furnitureTypes = new ArrayList<>();
         furnitureTypes.add(0,"Select furniture type");
         furnitureTypes.add(getResources().getString(R.string.type_unfurnished));
@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity  {
             TextView tvError = findViewById(R.id.tvError);
             TextView tvPropertyName = findViewById(R.id.tvPropertyName);
             TextView tvPropertyAddress = findViewById(R.id.tvPropertyAddress);
-            Spinner spinnerPropertyType = findViewById(R.id.spinner_propertyType);
-            Spinner spinnerFurnitureType = findViewById(R.id.spinner_furnitureType);
+            Spinner spinnerPropertyType = findViewById(R.id.spinnerPropertyType);
+            Spinner spinnerFurnitureType = findViewById(R.id.spinnerFurnitureType);
             TextView tvNOB = findViewById(R.id.tvNOB);
             TextView tvMonthlyPrice = findViewById(R.id.tvMonthlyPrice);
             TextView tvReporter = findViewById(R.id.tvReporter);

@@ -26,6 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/propertyAddress_layout"
             >
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tvPropertyName"
                 android:layout_width="match_parent"
@@ -34,17 +35,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/propertyAddress_layout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:hint="Property address"
             app:hintEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerPropertyType"
+            app:layout_constraintEnd_toEndOf="@+id/propertyName_layout"
+            app:layout_constraintStart_toStartOf="@+id/propertyName_layout"
             app:layout_constraintTop_toBottomOf="@+id/propertyName_layout"
-            app:layout_constraintBottom_toTopOf="@+id/spinner_propertyType"
             app:layout_constraintVertical_chainStyle="packed">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -55,44 +54,38 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Spinner
-            android:id="@+id/spinner_propertyType"
-            android:layout_width="match_parent"
+            android:id="@+id/spinnerPropertyType"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:spinnerMode="dropdown"
-            app:layout_constraintBottom_toTopOf="@id/spinner_furnitureType"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerFurnitureType"
+            app:layout_constraintEnd_toEndOf="@+id/propertyAddress_layout"
+            app:layout_constraintStart_toStartOf="@+id/propertyAddress_layout"
             app:layout_constraintTop_toBottomOf="@+id/propertyAddress_layout" />
 
         <Spinner
-            android:id="@+id/spinner_furnitureType"
-            android:layout_width="match_parent"
+            android:id="@+id/spinnerFurnitureType"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:spinnerMode="dropdown"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:spinnerMode="dropdown"
             app:layout_constraintBottom_toTopOf="@id/NOB_layout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner_propertyType" />
+            app:layout_constraintEnd_toEndOf="@+id/spinnerPropertyType"
+            app:layout_constraintStart_toStartOf="@+id/spinnerPropertyType"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPropertyType" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/NOB_layout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:hint="Number of bedrooms"
             app:hintEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner_furnitureType"
             app:layout_constraintBottom_toTopOf="@+id/monthlyPrice_layout"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerFurnitureType"
+            app:layout_constraintStart_toStartOf="@+id/spinnerFurnitureType"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerFurnitureType"
             app:layout_constraintVertical_chainStyle="packed">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -104,17 +97,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/monthlyPrice_layout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:hint="Monthly price"
             app:hintEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/NOB_layout"
             app:layout_constraintBottom_toTopOf="@+id/reporter_layout"
+            app:layout_constraintEnd_toEndOf="@+id/NOB_layout"
+            app:layout_constraintStart_toStartOf="@+id/NOB_layout"
+            app:layout_constraintTop_toBottomOf="@+id/NOB_layout"
             app:layout_constraintVertical_chainStyle="packed">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -126,17 +117,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/reporter_layout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:hint="Reporter"
             app:hintEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/monthlyPrice_layout"
             app:layout_constraintBottom_toTopOf="@+id/note_layout"
+            app:layout_constraintEnd_toEndOf="@+id/monthlyPrice_layout"
+            app:layout_constraintStart_toStartOf="@+id/monthlyPrice_layout"
+            app:layout_constraintTop_toBottomOf="@+id/monthlyPrice_layout"
             app:layout_constraintVertical_chainStyle="packed">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -148,17 +137,15 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/note_layout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:hint="Note"
             app:hintEnabled="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reporter_layout"
             app:layout_constraintBottom_toTopOf="@+id/tvError"
+            app:layout_constraintEnd_toEndOf="@+id/reporter_layout"
+            app:layout_constraintStart_toStartOf="@+id/reporter_layout"
+            app:layout_constraintTop_toBottomOf="@+id/reporter_layout"
             app:layout_constraintVertical_chainStyle="packed">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -170,29 +157,26 @@
 
         <TextView
             android:id="@+id/tvError"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="12dp"
             android:textColor="#FF0000"
             app:layout_constraintBottom_toTopOf="@+id/btnLogin"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/note_layout"
+            app:layout_constraintStart_toStartOf="@+id/note_layout"
             app:layout_constraintTop_toBottomOf="@+id/note_layout" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvError"></com.google.android.material.button.MaterialButton>
+            app:layout_constraintEnd_toEndOf="@+id/tvError"
+            app:layout_constraintStart_toStartOf="@+id/tvError"
+            app:layout_constraintTop_toBottomOf="@+id/tvError">
+        </com.google.android.material.button.MaterialButton>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
